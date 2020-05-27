@@ -1,0 +1,133 @@
+$white: #ECEBE4;
+$Tuscany: #cc998d;
+$SeaGreen: #16f4d0;
+$CadetBlue: #429ea6;
+$Indigo: #153b50;
+
+
+
+.Landing-Container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Landing-Info{
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    h1{
+
+        color: $SeaGreen ;
+        font-size: 5.5vw;
+        text-shadow: 1px 2px 2px #111;
+    }
+    
+}
+.Landing-Text{
+    width: 40%;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-around;
+    color: $white;
+    img{
+        width:75px;
+        height: 75px;
+        
+    }
+    h4{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.2vw;
+        img{
+            margin-top:5px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.spacer{
+    color: $white;
+    font-size: 1.2vw;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+
+//animations
+.fade-in1{
+    animation: fadeIn1 ease 5s;
+}
+.fade-in2{
+    animation: fadeIn2 ease 5s;
+}
+.fade-in3{
+    animation: fadeIn3 ease 5s;
+}
+@keyframes fadeIn1{
+    0% {opacity: 0;}
+    50% { opacity: 1;}
+}
+@keyframes fadeIn2{
+    0% {opacity: 0;}
+    75% { opacity: 1;}
+}
+@keyframes fadeIn3{
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+
+
+@media only screen and (max-width: 1024px){
+    .Landing-Text{
+        width: 60%;
+        h4{
+            font-size: 1.9vw;
+        }
+    }
+    .spacer{
+        font-size: 1.9vw;
+    }
+}
+@media only screen and (max-width: 425px){
+    .Landing-Text{
+        width: 80%;
+        h4{
+            font-size: 2.5vw;
+        }
+    }
+    .spacer{
+        font-size: 2.5vw;
+    }
+    .Landing-Container{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 375px){
+    .Landing-Info{
+        h1{
+            margin-bottom: 0;
+        }
+    }
+    .Landing-Text{
+        width: 80%;
+        h4{
+            font-size: 3vw;
+        }
+    }
+    .spacer{
+        font-size: 3vw;
+    }
+}
