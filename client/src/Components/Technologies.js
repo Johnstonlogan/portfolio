@@ -13,7 +13,7 @@ export const Technologies = () => {
         <span className="Projects-Header-Text">Projects</span>
         <hr />
       </div>
-        <ScrollAnimation animateIn="slide-in-bottom" animateOut="slide-out-right">
+        <ScrollAnimation animateIn="slide-in-right" animateOut="slide-out-right">
       <div className="Projects-Container">
         <div className="Project1">
           <div className="Project1-Left">
@@ -22,7 +22,7 @@ export const Technologies = () => {
           <div className="Project1-Right">
             <a href="https://www.mymog.io" target="blank">
               <h6 className="Project-Title">
-                MyMog.io - <i>in progress</i>
+                MyMog.io  <i>- in progress</i>
               </h6>
             </a>
             <p>

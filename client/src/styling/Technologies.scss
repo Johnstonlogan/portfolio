@@ -4,30 +4,36 @@ $SeaGreen: #16f4d0;
 $CadetBlue: #429ea6;
 $Indigo: #153b50;
 .Projects-Header{
-    font-size: 30px;
+    margin-top: 20px;
     color: $white;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    font-size: x-large;
+    
+   
 }
 
 .Projects-Container{
-    height: 50vh;
     width: 100%;
+    height: 100%;
+    position: relative;
     display: flex;
+    justify-content: center;
     flex-direction: row;
+    margin-bottom: 20px;
+    
 
 }
 .Project-Title{
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     color: $SeaGreen;
     margin: 0;
+    height: 10% !important;
     width: 100%;
     height: fit-content;
     text-align: center;
+   
     i{
-        font-size: .8vw;
+        font-size: 1.8vw;
     }
-    
     
 }
 .Project-Title:hover{
@@ -36,10 +42,9 @@ $Indigo: #153b50;
 }
 .Project1{
     width: 100%;
-    height: 255px;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    
     img{
         height: 100%;
         width: 100%;
@@ -47,25 +52,33 @@ $Indigo: #153b50;
 }
 .Project1-Left{
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Project1-Right{
     width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding-left: 5px;
+    padding-left: 10px;
     a{
         text-decoration: none;
     }
     p{
+        height: 80%;
+        
+        text-align: center;
         color: $white;
         margin: 0;
-        font-size: 1vw;
+        position: relative;
+        
         
     }
 }
 .Project1-Links{
     width: 100%;
-    height: 100%;
+    margin-top: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,74 +98,24 @@ $Indigo: #153b50;
         
     }
 }
-
-@media only screen and (max-width: 768px){
-    .Project1-Left{
-        width: 100%;
-    }
-    .Project1-Right{
-        width: 100%;
-        margin-bottom: 40px ;
-        p{
-            font-size: 1.3vw;
-        }
-    }
-        .Project1{
-          
-            flex-direction: column;}
-
-            .Project-Title{
-                font-size: 1.8vw;
-              
-                i{
-                    font-size: 1vw;
-                }
-                
-                
-            }
-}
-@media only screen and (max-width: 425px){
-   
-
-        .Project-Title{
-            font-size: 3vw;
-          
-            i{
-                font-size: 2vw;
-            }
-            
-            
-        }
-        .Project1-Right{
+@media only screen and (max-width: 1024px){
+    .Project1-Links{
         
-            p{
-                line-height: 1.1rem;
-                font-size: 2.2vw;
-            }
+        img{
+            width: 3vw;
+            
         }
+    }
+    
+   }
+   
+  
+    @media only screen and (max-width: 425px){
         .Project1-Links{
-            
+        
             img{
-                margin-top: 10px;
                 width: 4vw;
-                height: auto;
+                
             }
         }
-            
-}
-
-// animations
-.slide-in-bottom{
-    animation: slideInBottom ease 3s
-}
-@keyframes slideInBottom{
-    0% {margin-top: 40%;}
-    100% {margin-top: 0;}
-}
-.slide-out-right{
-    animation: slideOutRight ease 3s
-}
-@keyframes slideOutRight{
-    0% {margin-left: 0%;}
-    100% {margin-left: 100%;}
-}
+    }

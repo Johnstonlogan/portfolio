@@ -5,11 +5,13 @@ $CadetBlue: #429ea6;
 $Indigo: #153b50;
 
 .About-Container{
-    height: 60vh;
-    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: relative;
+   
 }
 
 .About-Left{
@@ -19,9 +21,10 @@ $Indigo: #153b50;
     width: 40%;
     height: 100%;
     img{
-        width: 30vw;
-        height: 100%;
-        margin-bottom: auto;
+        position: static;
+        width: 100%;
+        height: auto;
+        
        
     }
 }
@@ -35,79 +38,31 @@ $Indigo: #153b50;
 .About-Right-Text{
     width: 80%;
     color: $white;
-    font-size: 1.3vw;
+    
 
 }
 .About-Header{
-    font-size: 30px;
+    font-size: x-large;
     color: $white;
-    margin-bottom: 40px;
+    
 }
 
 
 
 //animations
-.slide-in-bottom{
-    animation: slideInBottom ease 3s
+.slide-in-right{
+    animation: slideInRight ease 3s
 }
-@keyframes slideInBottom{
-    0% {margin-top: 40%;}
-    100% {margin-top: 0;}
+@keyframes slideInRight{
+    0% {transform: translateX(150%)}
+    100% {transform: translateX(0%);}
 }
 .slide-out-right{
-    animation: slideOutRight ease 3s
+    animation: slideOutRight ease .5s
 }
 @keyframes slideOutRight{
-    0% {margin-left: 0%;}
-    100% {margin-left: 100%;}
+   
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(150%);}
 }
 
-@media only screen and (max-width: 1024px){
-    .About-Right-Text{
-        
-        font-size: 1.85vw;
-        line-height: 1.2em;
-       
-    
-    }
-    .About-Header{
-        margin-bottom: 10px;
-    }
-}
-@media only screen and (max-width: 768px){
-    .About-Container{
-        flex-direction: column;
-    }
-    .About-Right-Text{
-        
-        font-size: 1.6vw;
-        line-height: 1.1rem;
-    
-    }
-    .About-Right{
-        width: 100%;
-        p{
-            width: 100%;
-        }
-    }
-    .About-Left{
-        width: 100%;
-        // img{
-        //     width: 60%;
-        //     margin: 0;
-        // }
-    }
-    
-}
-@media only screen and (max-width: 425px){
-    .About-Header{
-        margin-bottom: 25px;
-    }
-    .About-Right-Text{
-        
-        font-size: 2.4vw;
-        line-height: 1.1rem;
-    
-    }
-
-}

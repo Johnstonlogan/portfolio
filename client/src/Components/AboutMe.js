@@ -11,7 +11,7 @@ export const AboutMe = () => {
         <span className="About-Header-Text">About</span>
         <hr />
       </div>
-      <ScrollAnimation animateIn="slide-in-bottom" animateOut="slide-out-right" >
+      <ScrollAnimation animateIn="slide-in-right" animateOut="slide-out-right" >
       <div className="About-Container ">
         <div className="About-Left">
           <img src={user} alt="about" />
@@ -26,8 +26,8 @@ export const AboutMe = () => {
             many people too. This feeling of creating new applications out of
             nothing but an idea brought me immeasurable joy and I can’t wait to
             do more
-            <br />
-            <br />
+            <br/>
+            <br/>
             Please see the projects I've been working on below. Feel free to
             reach out for a chat, collaboration idea or if you feel I would be a
             good fit for your team. Thank you for checking me out!
