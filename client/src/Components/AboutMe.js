@@ -5,13 +5,13 @@ import "../styling/About.scss";
 
 export const AboutMe = () => {
   return (
-    <React.Fragment>
-      
+    <div>
+      <ScrollAnimation animateIn="slide-in-right"  >
       <div className="About-Header">
         <span className="About-Header-Text">About</span>
         <hr />
       </div>
-      <ScrollAnimation animateIn="slide-in-right" animateOut="slide-out-right" >
+      </ScrollAnimation>
       <div className="About-Container ">
         <div className="About-Left">
           <img src={user} alt="about" />
@@ -34,8 +34,8 @@ export const AboutMe = () => {
           </p>
         </div>
       </div>
-      </ScrollAnimation>
      
-    </React.Fragment>
+     
+      </div>
   );
 };

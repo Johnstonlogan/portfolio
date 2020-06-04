@@ -108,7 +108,27 @@ $Indigo: #153b50;
     }
     
    }
-   
+
+   @media only screen and (max-width: 768px){
+       .Projects-Container{
+           margin-bottom:0 ;
+       }
+       .Project1-Links{
+           margin: 3px 0 3px 0;
+       }
+       .Project1{
+           flex-direction: column;
+           align-content: center;
+           justify-content: center;
+       }
+       .Project1-Left{
+           width: 100%;
+           margin-bottom: 5px;
+       }
+       .Project1-Right{
+           width: 100%;
+       }
+   }
   
     @media only screen and (max-width: 425px){
         .Project1-Links{
