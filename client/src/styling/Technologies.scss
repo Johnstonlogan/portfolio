@@ -23,16 +23,14 @@ $Indigo: #153b50;
 
 }
 .Project-Title{
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: $SeaGreen;
     margin: 0;
-    height: 10% !important;
     width: 100%;
-    height: fit-content;
     text-align: center;
    
     i{
-        font-size: 1.8vw;
+        font-size: 1.2vw;
     }
     
 }
@@ -58,16 +56,17 @@ $Indigo: #153b50;
 }
 .Project1-Right{
     width: 60%;
-    height: 100%;
+    
     display: flex;
     flex-direction: column;
     padding-left: 10px;
+    justify-content: space-between;
     a{
         text-decoration: none;
     }
     p{
-        height: 80%;
         
+       
         text-align: center;
         color: $white;
         margin: 0;
@@ -78,7 +77,6 @@ $Indigo: #153b50;
 }
 .Project1-Links{
     width: 100%;
-    margin-top: auto;
     display: flex;
     flex-direction: row;
     align-items: center;

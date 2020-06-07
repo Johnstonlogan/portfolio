@@ -11,9 +11,11 @@ function App() {
   return (
     <div className="App">
       <div className="Left-Margin">
-        <a target="_blank" href="https://github.com/Johnstonlogan" rel="noopener noreferrer"><img src={github} alt="github" /></a>
-       <a target="_blank" href="https://www.linkedin.com/in/logan-johnston-58b08a152/" rel="noopener noreferrer"> <img src={linkedin} alt="linkedin" /></a>
-       <a  target="_blank" href="https://docs.google.com/document/d/1EI_3h0uLJdE_tY5LrUYO0tFNRnunKv1xQ5WGCt2meRg/edit" rel="noopener noreferrer"> <img src={resume} alt="resume" /> </a>
+        <div className="Left-Margin-Links">
+        <a target="_blank" href="https://github.com/Johnstonlogan" rel="noopener noreferrer"><img src={github} alt="github" title="Github" /></a>
+       <a target="_blank" href="https://www.linkedin.com/in/logan-johnston-58b08a152/" rel="noopener noreferrer"> <img src={linkedin} alt="linkedin" title="Linkedin" /></a>
+       <a  target="_blank" href="https://docs.google.com/document/d/1EI_3h0uLJdE_tY5LrUYO0tFNRnunKv1xQ5WGCt2meRg/edit" rel="noopener noreferrer"> <img src={resume} alt="resume" title="Resume"/> </a>
+       </div>
       </div>
       {/* <HamburgerButton /> */}
       <div className="app-container">

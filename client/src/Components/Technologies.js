@@ -40,7 +40,11 @@ export const Technologies = () => {
         liveImage={live}
         projectTitle={"Movie-Search"}
         githubImage={github}
-        details={`Created to allow users to search movies, learn movie details such as directors, actors, imdb ratings, and plot. Built using React including React hooks and SCSS. Data derived from OMDB (omdbapi.com) using Axios client side and an AWS lambda function to protect api key from being exposed client side. Hosted using AWS S3 Bucket.   `}
+        details={`Created to allow users to search movies, learn movie details such 
+        as directors, actors, imdb ratings, and plot. Built using React including 
+        React hooks and SCSS. Data derived from OMDB (omdbapi.com) using Axios client
+        side and an AWS lambda function to protect api key from being exposed client 
+        side. Hosted using AWS S3 Bucket.   `}
         inProgress={false}
         liveLink={"http://moviesearch.info.s3-website-us-west-1.amazonaws.com"}
         gitLink={"https://github.com/Johnstonlogan/movie-search"}
