@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import { LandingPage } from "./Components/LandingPage";
 import { AboutMe } from "./Components/AboutMe";
@@ -8,6 +8,14 @@ import resume from "../src/Images/resume.png";
 import {Technologies} from "./Components/Technologies"
 
 function App() {
+    const [scrollPos, setScrollPos] = useState(0);
+    window.addEventListener('scroll', (e) =>{
+      setScrollPos(window.scrollY)
+     
+
+    })
+
+ 
   return (
     <div className="App">
       <div className="Left-Margin">
@@ -19,7 +27,7 @@ function App() {
       </div>
       {/* <HamburgerButton /> */}
       <div className="app-container">
-        <LandingPage />
+        <LandingPage scrollPosition={scrollPos} />
         <AboutMe />
         <Technologies />
       </div>

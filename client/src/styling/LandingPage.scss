@@ -12,6 +12,7 @@ $Indigo: #153b50;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;;
     position: relative;
 }
 
@@ -24,6 +25,7 @@ $Indigo: #153b50;
     align-items: center;
     flex-direction: column;
     color: #fff;
+   
     h1{
 
         color: $SeaGreen ;
@@ -66,6 +68,30 @@ $Indigo: #153b50;
     margin-block-start: 1.33em;
     margin-block-end: 1.33em;
 }
+.scroll-down-ind{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    img{
+        height: 20px;
+        width: 20px;
+    }
+    span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2px;
+        font-size: small;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+}
 
 //animations
 .fade-in1{
@@ -90,6 +116,15 @@ $Indigo: #153b50;
     100% { opacity: 1;}
 }
 
+.bounce{
+    
+    animation: bounce 3s infinite;
+}
+@keyframes bounce{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+}
 
 @media only screen and (max-width: 1024px){
     .Landing-Text{
