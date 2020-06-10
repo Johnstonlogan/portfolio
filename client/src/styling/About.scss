@@ -4,8 +4,8 @@ $SeaGreen: #16f4d0;
 $CadetBlue: #429ea6;
 $Indigo: #153b50;
 
-.about {
-  &__header {
+.infoSection {
+  &__header__text {
     font-size: x-large;
     color: $white;
   }
@@ -28,17 +28,19 @@ $Indigo: #153b50;
   &__image {
     width: 60%;
   }
+  &__right{
+    width: 70%;
+    padding: 40px;
+  }
+  &__text{
+    color: $white;
+    margin: 0;
+    display: flex;
+  }
 }
 
-.About-Right {
-  width: 70%;
-  padding: 40px;
-}
-.About-Right-Text {
-  color: $white;
-  margin: 0;
-  display: flex;
-}
+
+
 
 //animations
 .slide-in-right {
@@ -68,23 +70,23 @@ $Indigo: #153b50;
   }
 }
 @media only screen and (max-width: 768px){
-  .about{
+  .infoSection{
 
 
 
     &__container{
+      
       flex-direction: column;
-      justify-content: center;
-      align-content: center;
+      
     }
     &__left{
       width: 50%;
       margin: 0 auto;
     }
+    &__right{
+      margin: 0 auto;
+    }
   }
   
-  .About-Right{
-    width: 100%;
-    padding: 0
-  }
+  
 }

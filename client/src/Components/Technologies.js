@@ -4,7 +4,7 @@ import live from "../Images/live.png";
 import github from "../Images/github-logo.png";
 import moviesearch from "../Images/moviesearch.png";
 import { Project } from "../Components/Project";
-import ScrollAnimation from "react-animate-on-scroll";
+
 
 import "../styling/Technologies.scss";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import scrollDown from "../Images/scroll.png";
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import "../styling/LandingPage.scss";
 
