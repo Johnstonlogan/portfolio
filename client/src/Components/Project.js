@@ -1,5 +1,6 @@
 import React from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LiveTvIcon from '@material-ui/icons/LiveTv';
 import "../styling/Technologies.scss";
 
 export const Project = (props) => {
@@ -12,22 +13,25 @@ export const Project = (props) => {
           </div>
           <div className="Project1-Right">
            
-            <a href={props.liveLink} target="blank">
+            
               <h6 className="Project-Title">
+              <a href={props.liveLink} target="blank">
                 {props.projectTitle}
+                
                 {props.inProgress ? <i>- in progress</i> : null}
+                </a>
               </h6>
-            </a>
+           
             
             <div>
             <p>{props.details}</p>
             </div>
             <div className="Project1-Links">
               <a href={props.liveLink} target="blank">
-                <img src={props.liveImage} />
+                <LiveTvIcon className="link" />
               </a>
               <a href={props.gitLink} target="_blank">
-                <img src={props.githubImage} />
+                <GitHubIcon  className="link"/>
               </a>
             </div>
           </div>

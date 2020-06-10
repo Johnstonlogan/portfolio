@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.Left-Margin {
+.left-nav {
   display: flex;
   left: 0;
   width: 15%;
@@ -25,22 +25,25 @@
   flex-direction: column;
 
   a {
+   width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .Left-Margin-Links {
-    height: 175px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+ 
   img {
-    width: 15%;
+    width: 100%;
   }
   img:hover {
     cursor: pointer;
     transform: scale(1.1);
+  }
+
+  &__links {
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 768px){

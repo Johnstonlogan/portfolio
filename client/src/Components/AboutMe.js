@@ -1,22 +1,26 @@
 import React from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
-import user from "../Images/person.png";
+import user from "../Images/desk.svg";
 import "../styling/About.scss";
 
 export const AboutMe = () => {
   return (
-    <div>
-      <ScrollAnimation animateIn="slide-in-right"  >
-      <div className="About-Header">
+    <div className="about">
+      
+      <div className="about__header">
         <span className="About-Header-Text">About</span>
         <hr />
       </div>
-      </ScrollAnimation>
-      <div className="About-Container ">
-        <div className="About-Left">
+      
+      <div className="about__container ">
+        <div className="about__left">
+          <ScrollAnimation className="about__image" animateIn="slide-in-left">
           <img src={user} alt="about" />
+          </ScrollAnimation>
         </div>
+        
         <div className="About-Right">
+          <ScrollAnimation animateIn="slide-in-right">
           <p className="About-Right-Text">
             Greetings, my name is Logan. I am a Developer living in San Diego,
             California. After spending some time in the US Navy, I realized my
@@ -32,7 +36,9 @@ export const AboutMe = () => {
             reach out for a chat, collaboration idea or if you feel I would be a
             good fit for your team. Thank you for checking me out!
           </p>
+          </ScrollAnimation>
         </div>
+      
       </div>
      
      

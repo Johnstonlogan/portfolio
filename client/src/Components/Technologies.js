@@ -11,12 +11,10 @@ import "../styling/Technologies.scss";
 export const Technologies = () => {
   return (
     <div>
-      <ScrollAnimation animateIn="slide-in-right">
-        <div className="Projects-Header">
-          <span className="Projects-Header-Text">Projects</span>
-          <hr />
-        </div>
-      </ScrollAnimation>
+      <div className="Projects-Header">
+        <span className="Projects-Header-Text">Projects</span>
+        <hr />
+      </div>
 
       <Project
         projectImage={mymog}
