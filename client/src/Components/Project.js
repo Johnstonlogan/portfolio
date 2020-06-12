@@ -5,14 +5,15 @@ import "../styling/Technologies.scss";
 
 export const Project = (props) => {
   return (
-    <div>
-      <div className="Projects-Container">
-        <div className="Project1">
-          <div className="Project1-Left">
+    
+      <div className="project">
+       
+          <div className="project__left">
             <img src={props.projectImage} alt={props.projectTitle} />
           </div>
-          <div className="Project1-Right">
-            <h6 className="Project-Title">
+         
+          <div className="project__right">
+            <h6 className="project__title">
               <a href={props.liveLink} target="blank" rel="noopener noreferrer">
                 {props.projectTitle}
 
@@ -23,7 +24,7 @@ export const Project = (props) => {
             <div>
               <p>{props.details}</p>
             </div>
-            <div className="Project1-Links">
+            <div className="project__links">
               <a href={props.liveLink} target="blank" rel="noopener noreferrer">
                 <LiveTvIcon className="link" />
               </a>
@@ -32,8 +33,9 @@ export const Project = (props) => {
               </a>
             </div>
           </div>
-        </div>
+         
+      
       </div>
-    </div>
+    
   );
 };

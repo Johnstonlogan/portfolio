@@ -1,4 +1,4 @@
-.App {
+.app {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -25,12 +25,12 @@
   flex-direction: column;
 
   a {
-   width: 30px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
- 
+
   img {
     width: 100%;
   }
@@ -46,8 +46,8 @@
     justify-content: space-between;
   }
 }
-@media only screen and (max-width: 768px){
-  .Left-Margin-Links{
+@media only screen and (max-width: 768px) {
+  .Left-Margin-Links {
     height: 125px !important;
   }
 }

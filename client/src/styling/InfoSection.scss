@@ -5,6 +5,9 @@ $CadetBlue: #429ea6;
 $Indigo: #153b50;
 
 .infoSection {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
   &__header__text {
     font-size: x-large;
     color: $white;
@@ -13,7 +16,7 @@ $Indigo: #153b50;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+
     position: relative;
   }
   &__left {
@@ -28,19 +31,19 @@ $Indigo: #153b50;
   &__image {
     width: 60%;
   }
-  &__right{
+  &__right {
     width: 70%;
     padding: 40px;
   }
-  &__text{
+  &__text {
     color: $white;
     margin: 0;
-    display: flex;
+  }
+  &__skill {
+    color: $SeaGreen;
+    text-align: center;
   }
 }
-
-
-
 
 //animations
 .slide-in-right {
@@ -69,24 +72,27 @@ $Indigo: #153b50;
     opacity: 1;
   }
 }
-@media only screen and (max-width: 768px){
-  .infoSection{
-
-
-
-    &__container{
-      
+@media only screen and (max-width: 768px) {
+  .infoSection {
+    &__container {
       flex-direction: column;
-      
     }
-    &__left{
+    &__left {
       width: 50%;
       margin: 0 auto;
     }
-    &__right{
+    &__right {
       margin: 0 auto;
+      padding: 20px 0 20px 0;
+      width: 100%;
     }
   }
-  
-  
+}
+@media only screen and (max-width: 425px) {
+  .infoSection {
+    &__right {
+      padding: 0;
+      width: 100%;
+    }
+  }
 }

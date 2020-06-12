@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import "../styling/LandingPage.scss";
 
 export const LandingPage = (props) => {
@@ -7,24 +7,13 @@ export const LandingPage = (props) => {
     window.scrollTo(0, 769);
   };
   return (
-    <div className="landing">
+    <section className="landing">
       <div className="landing__info">
         <h1>Logan Johnston</h1>
         <div className="landing__text">
-          <h4 className="landing--fadein1">
-            Developer
-            {/* <img src={developer} /> */}
-          </h4>
+          <h4 className="landing--fadein1">Full Stack Developer</h4>
           <span className="landing__spacer">|</span>
-          <h4 className="landing--fadein2">
-            Gamer
-            {/* <img src={gamer} /> */}
-          </h4>
-          <span className="landing__spacer">|</span>
-          <h4 className="landing--fadein3">
-            Philomath
-            {/* <img src={team} /> */}
-          </h4>
+          <h4 className="landing--fadein2">San Diego, California</h4>
         </div>
       </div>
       {props.scrollPosition <= 15 ? (
@@ -35,12 +24,10 @@ export const LandingPage = (props) => {
             }}
           >
             About me
-            {/* <img src={scrollDown} alt="Scroll-Down" className="bounce" /> */}
-            <ArrowDropDownIcon className="bounce"/>
-            
+            <ArrowDropDownIcon className="bounce" />
           </span>
         </div>
       ) : null}
-    </div>
+    </section>
   );
 };

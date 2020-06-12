@@ -1,0 +1,55 @@
+$white: #ecebe4;
+$Tuscany: #cc998d;
+$SeaGreen: #16f4d0;
+$CadetBlue: #429ea6;
+$Indigo: #153b50;
+
+.skills {
+  &__header {
+    font-size: x-large;
+    color: $white;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  &__image {
+    width: 25%;
+  }
+  &__title {
+    width: 100%;
+    color: $SeaGreen;
+    text-align: center;
+  }
+  &__content {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    color: $white;
+    text-align: center;
+    li {
+      padding: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skills {
+    &__container {
+      flex-direction: column;
+    }
+  }
+  .card {
+    border-bottom: solid 1px $white;
+  }
+  .card:last-child {
+    border: none;
+  }
+}

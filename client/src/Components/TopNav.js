@@ -10,42 +10,30 @@ export const TopNav = () => {
       <div className="top-nav__menu">
         {open === true ? (
           <ul className=" top-nav__menu-item slide-in">
-               <a
-                target="_blank"
-                href="https://docs.google.com/document/d/1EI_3h0uLJdE_tY5LrUYO0tFNRnunKv1xQ5WGCt2meRg/edit"
-                rel="noopener noreferrer"
-              >
-            <li>
-             
-                Resume
-              
-            </li>
+            <a
+              target="_blank"
+              href="https://docs.google.com/document/d/1EI_3h0uLJdE_tY5LrUYO0tFNRnunKv1xQ5WGCt2meRg/edit"
+              rel="noopener noreferrer"
+            >
+              <li>Resume</li>
             </a>
             <a
-                target="_blank"
-                href="https://github.com/Johnstonlogan"
-                rel="noopener noreferrer"
-              >
-            <li>
-              
-                Github
-             
-            </li>
+              target="_blank"
+              href="https://github.com/Johnstonlogan"
+              rel="noopener noreferrer"
+            >
+              <li>Github</li>
             </a>
             <a
-                target="_blank"
-                href="https://www.linkedin.com/in/logan-johnston-58b08a152/"
-                rel="noopener noreferrer"
-              >
-            <li>
-             
-                Linkedin
-             
-            </li>
+              target="_blank"
+              href="https://www.linkedin.com/in/logan-johnston-58b08a152/"
+              rel="noopener noreferrer"
+            >
+              <li>Linkedin</li>
             </a>
           </ul>
         ) : (
-          <ul className=" top-nav__menu-item slide-out ">
+          <ul className=" top-nav__menu-item slide-out">
             <li>Resume</li>
             <li>Github</li>
             <li>Linkedin</li>
@@ -53,21 +41,23 @@ export const TopNav = () => {
         )}
 
         {open === false ? (
-          <a
+          <div
+            className="top-nav__button"
             onClick={() => {
               setOpen(true);
             }}
           >
             <MenuIcon />
-          </a>
+          </div>
         ) : (
-          <a
+          <div
+            className="top-nav__button"
             onClick={() => {
               setOpen(false);
             }}
           >
             <MenuOpenIcon />
-          </a>
+          </div>
         )}
       </div>
     </nav>

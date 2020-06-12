@@ -5,14 +5,13 @@ import github from "../Images/github-logo.png";
 import moviesearch from "../Images/moviesearch.png";
 import { Project } from "../Components/Project";
 
-
 import "../styling/Technologies.scss";
 
 export const Technologies = () => {
   return (
-    <div>
-      <div className="Projects-Header">
-        <span className="Projects-Header-Text">Projects</span>
+    <section>
+      <div className="project__header">
+        <span>Projects</span>
         <hr />
       </div>
 
@@ -47,6 +46,6 @@ export const Technologies = () => {
         liveLink={"http://moviesearch.info.s3-website-us-west-1.amazonaws.com"}
         gitLink={"https://github.com/Johnstonlogan/movie-search"}
       />
-    </div>
+    </section>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import "../styling/About.scss";
+import "../styling/InfoSection.scss";
 
 export const InfoSection = (props) => {
   return (
@@ -13,16 +13,20 @@ export const InfoSection = (props) => {
         return (
           <div className="infoSection__container " key={i}>
             <div className="infoSection__left">
+            
               <ScrollAnimation
                 className="infoSection__image"
                 animateIn="slide-in-left"
               >
+                
                 <img src={info.image} alt="infoSection" />
               </ScrollAnimation>
             </div>
 
             <div className="infoSection__right">
+
               <ScrollAnimation animateIn="slide-in-right">
+              {info.header ? <h2 className="infoSection__skill">{info.header}</h2> : null}
                 <p className="infoSection__text">{info.text}</p>
               </ScrollAnimation>
             </div>

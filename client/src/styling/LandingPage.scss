@@ -11,7 +11,6 @@ $Indigo: #153b50;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
 
   &__info {
     width: 100%;
@@ -20,22 +19,24 @@ $Indigo: #153b50;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #fff;
+    color: $white;
 
     h1 {
+      text-align: center;
+      width: 100%;
       color: $SeaGreen;
-      font-size: 5.5vw;
+      font-size: 4.3em;
       text-shadow: 1px 2px 2px #111;
     }
   }
 
   &__text {
-    width: 40%;
-    height: 100px;
+    width: 70%;
+    height: 75px;
     display: flex;
     align-content: center;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: center;
     color: $white;
     img {
       width: 75px;
@@ -43,12 +44,12 @@ $Indigo: #153b50;
     }
     h4 {
       display: flex;
-      flex-direction: column;
-      text-align: center;
       align-items: center;
+      justify-content: center;
       font-family: "Courier New", Courier, monospace;
-      font-size: small;
+      font-size: 0.8em;
       padding: 5px;
+      margin: 0;
       img {
         margin-top: 5px;
         width: 30px;
@@ -57,11 +58,11 @@ $Indigo: #153b50;
     }
   }
   &__spacer {
+    display: flex;
+    align-items: center;
     color: $white;
-    font-size: small;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    padding: 5px;
+    font-size: 0.8em;
+    padding: 0 10px;
   }
 
   &--fadein1 {
@@ -105,14 +106,6 @@ $Indigo: #153b50;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  i {
-    height: 20px;
-    width: 20px;
-  }
-  img {
-    height: 20px;
-    width: 20px;
-  }
   span {
     display: flex;
     flex-direction: column;
@@ -121,7 +114,7 @@ $Indigo: #153b50;
 
     font-size: small;
     cursor: pointer;
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -140,26 +133,47 @@ $Indigo: #153b50;
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .landing {
+    &__text {
+      width: 100%;
 
-@media only screen and (max-width: 768px){
-  .landing{
-    &__text{
-      width: 50%;
+      flex-direction: column;
+
+      h4 {
+        margin: 0;
+        font-size: 0.8em;
+      }
     }
-    &__spacer{
-      font-size: x-small;
-     
+    &__spacer {
+      visibility: hidden;
+      margin: 0;
+      height: 0;
+      width: 0;
+      padding: 0;
     }
-    h4{
-      font-size: x-small;
-     
+    &__info {
+      h1 {
+        font-size: 2.3em;
+      }
     }
   }
 }
-@media only screen and (max-width: 425px){
-  .landing{
+@media only screen and (max-width: 425px) {
+  .landing {
     height: 101vh;
-    &__text{
-      width: 70%;
-    }}
+    &__text {
+      h4 {
+        font-size: 0.7em;
+      }
+    }
+    &__info {
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    &__spacer {
+      font-size: 0.7em;
+    }
+  }
 }
