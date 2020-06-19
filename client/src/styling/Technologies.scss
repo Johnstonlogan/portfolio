@@ -117,3 +117,31 @@ $Indigo: #153b50;
     }
   }
 }
+
+//animations
+.slide-in-right {
+  animation: slideInRight ease 5s;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  animation: slideInLeft ease 5s;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}

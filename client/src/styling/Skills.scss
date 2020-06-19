@@ -53,3 +53,30 @@ $Indigo: #153b50;
     border: none;
   }
 }
+//animation
+.slide-in-bottom {
+  animation: slideInBottom ease 5s;
+}
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.slide-in-top {
+  animation: slideInTop ease 5s;
+}
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-40%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

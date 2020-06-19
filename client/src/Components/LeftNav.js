@@ -6,7 +6,7 @@ import "../App.scss";
 
 export const LeftNav = () => {
   return (
-    <nav className="left-nav">
+    <aside className="left-nav">
       <div className="left-nav__links">
         <a
           target="_blank"
@@ -32,6 +32,6 @@ export const LeftNav = () => {
           <img src={resume} alt="resume" title="Resume" />{" "}
         </a>
       </div>
-    </nav>
+    </aside>
   );
 };
